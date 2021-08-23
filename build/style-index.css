@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * The following styles get applied both on the front of your site
  * and in the editor.
@@ -8,6 +9,23 @@
   background-color: #21759b;
   color: #fff;
   padding: 2px;
+}
+
+.rps-block {
+  padding-top: 12px;
+}
+.rps-block ul {
+  list-style: decimal;
+}
+.rps-block ul li a {
+  text-decoration: none !important;
+}
+
+.rps-block::before {
+  content: "—";
+  width: 2em;
+  color: #0087f6;
+  height: 1em;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

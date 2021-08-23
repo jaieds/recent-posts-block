@@ -33,9 +33,12 @@ function recent_posts_callback($attributes) {
 		'numberposts' => $attributes['num_posts']
 	));
 
-	$output = "";
+	$output = '<div class="rps-block">';
+	$output .= '<h4>Recent Posts: </h4>';
+	$output .= '<ul>';
 	foreach ($recent_posts as $single_post) {
-		$output .= '<a href="/'. $single_post->post_name .'"><h5>' . $single_post->post_title . '</h5></a>';
+		$output .= '<li><a href="/'. $single_post->post_name .'">' . $single_post->post_title . '</a></li>';
 	}
+	$output .= '</ul></div>';
 	return $output;
 }

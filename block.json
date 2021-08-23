@@ -1,0 +1,20 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/recent-posts",
+	"version": "0.1.0",
+	"title": "Recent Posts",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "recent-posts",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+  	"attributes": {
+	  "posts": {"type": "array", "default": []},
+	  "num_posts": {"type": "int", "default": 1}
+	}
+}
